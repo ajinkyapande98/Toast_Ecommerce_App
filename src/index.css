@@ -6,3 +6,7 @@
   font-family: "Graphik";
   src: url("./assets/Graphik-Font-Family/GraphikRegular.otf") format("truetype");
 }
+
+.con {
+  color: #a8a8a8;
+}

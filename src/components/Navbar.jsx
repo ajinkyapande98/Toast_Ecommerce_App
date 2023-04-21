@@ -16,10 +16,10 @@ const Navbar = () => {
     setActiveTab(tabId);
   };
   return (
-    <>
+    <div className=" lg:w-full   lg:flex lg:justify-center ">
       <header
         style={{ backgroundColor: "#f1f1f1" }}
-        className=" shadow-md rounded-b-xl"
+        className=" shadow-md rounded-b-xl lg:w-9/12"
       >
         <div className="flex justify-between p-4">
           <div className="flex gap-3">
@@ -69,7 +69,7 @@ const Navbar = () => {
           })}
         </div>
       </header>
-    </>
+    </div>
   );
 };
 

@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen " style={{ backgroundColor: "#f1f1f1" }}>
       <Routes>
         <Route
           exact

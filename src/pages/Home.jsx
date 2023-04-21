@@ -3,9 +3,11 @@ import Special_Page from "./Special_Page";
 
 function Home() {
   return (
-    <>
-      <Special_Page />
-    </>
+    <div className=" lg:w-full lg:flex justify-center">
+      <div className="lg:w-9/12">
+        <Special_Page />
+      </div>
+    </div>
   );
 }
 

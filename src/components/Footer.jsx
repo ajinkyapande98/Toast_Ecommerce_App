@@ -31,35 +31,37 @@ const Footer = () => {
 
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <div
-      className="flex justify-between fixed w-full z-50 -bottom-1 bg-white py-3 px-5 "
-      style={{ backgroundColor: "#f1f1f1" }}
-    >
-      {MenuItems.map((item, ind) => {
-        return (
-          <div key={ind}>
-            <Link to={item.path}>
-              <p className=" absolute right-2 top-0 text-white font-medium bg-red-500 rounded-full text-lg px-2">
-                {item.quantity <= 0 ? "" : item.quantity}
-              </p>
-              <img
-                onClick={() => setActiveTab(ind)}
-                className="h-9 p-2"
-                style={{
-                  borderRadius: "10px",
-                  boxShadow: `${
-                    activeTab === ind
-                      ? "inset 1px 1px 3px 1px #e4dfdf"
-                      : "2px 1px 10px 2px #e4dfdf"
-                  } `,
-                }}
-                src={item.icon}
-                alt=""
-              />
-            </Link>
-          </div>
-        );
-      })}
+    <div className=" flex justify-center">
+      <div
+        className="flex justify-between fixed lg:w-9/12 w-full z-50 -bottom-1 bg-white py-3 px-5 "
+        style={{ backgroundColor: "#f1f1f1" }}
+      >
+        {MenuItems.map((item, ind) => {
+          return (
+            <div key={ind}>
+              <Link to={item.path}>
+                <p className=" absolute right-2 top-0 text-white font-medium bg-red-500 rounded-full text-lg px-2">
+                  {item.quantity <= 0 ? "" : item.quantity}
+                </p>
+                <img
+                  onClick={() => setActiveTab(ind)}
+                  className="h-9 p-2"
+                  style={{
+                    borderRadius: "10px",
+                    boxShadow: `${
+                      activeTab === ind
+                        ? "inset 1px 1px 3px 1px #e4dfdf"
+                        : "2px 1px 10px 2px #e4dfdf"
+                    } `,
+                  }}
+                  src={item.icon}
+                  alt=""
+                />
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
