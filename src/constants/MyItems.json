@@ -1,0 +1,46 @@
+{
+  "Toasts": [
+    {
+      "name": "Mushroom Avocado",
+      "description": "Vegan",
+      "price": 450,
+      "Veg": true,
+      "isAddedToCart": false
+    },
+    {
+      "name": "Tofu Scramble",
+      "description": "Vegan",
+      "price": 310,
+      "Veg": true,
+      "isAddedToCart": false
+    },
+    {
+      "name": "Mediterranean TOAST",
+      "description": "Vegan",
+      "price": 340,
+      "Veg": true,
+      "isAddedToCart": false
+    },
+    {
+      "name": "Grilled Tomato and Basil Hummus",
+      "description": "Vegan",
+      "price": 290,
+      "Veg": true,
+      "isAddedToCart": false
+    },
+    {
+      "name": "Almond Butter",
+      "description": "Vegan",
+      "price": 260,
+      "Veg": true,
+      "isAddedToCart": false
+    },
+    {
+      "name": "Pesto Sundried Tomato Toast",
+      "description": "",
+      "price": 190,
+      "Veg": true,
+      "isAddedToCart": false
+    }
+  ]
+}
